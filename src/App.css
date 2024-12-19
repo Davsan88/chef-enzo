@@ -1,0 +1,5 @@
+header {
+    display: flex;  /* Flexbox for alignment */
+    align-items: center;  /* Center items vertically */
+    justify-content: center;  /* Align items to the center */
+}
