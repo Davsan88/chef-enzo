@@ -6,7 +6,6 @@
     --spacing: 1rem;  /* Base spacing unit */
   }
 
-
 header {
     display: flex;  /* Flexbox for alignment */
     align-items: center;  /* Center items vertically */
