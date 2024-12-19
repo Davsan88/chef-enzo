@@ -24,4 +24,5 @@ header img {
 
 header h1 {
     font-size: clamp(1.5rem, 2.5vw, 2rem);  /* Responsive font size for heading */    
+    font-weight: 400;
 }
