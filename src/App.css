@@ -15,9 +15,14 @@ header {
     padding: var(--spacing);  /* Padding around the header */
     gap: calc(0.5 * var(--spacing));  /* Space between header elements */
     color: var(--text-color);  /* Text color for header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
 header img {
-    width: clamp(2rem, 5vw, 3rem);  /* Responsive image width */
+    width: clamp(3rem, 5vw, 4rem);  /* Responsive image width */
     height: auto;  /* Maintain aspect ratio */
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);  /* Responsive font size for heading */    
 }
