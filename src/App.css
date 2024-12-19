@@ -17,3 +17,7 @@ header {
     color: var(--text-color);  /* Text color for header */
 }
 
+header img {
+    width: clamp(2rem, 5vw, 3rem);  /* Responsive image width */
+    height: auto;  /* Maintain aspect ratio */
+}
