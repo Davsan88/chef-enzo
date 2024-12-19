@@ -1,3 +1,12 @@
+/* Define CSS Variables */
+:root {
+    --primary-color: #fafaf8;  /* Primary color used for main body */
+    --secondary-color: #ffffff;  /* Secondary color used for header */
+    --text-color: #1b1b1b;  /* Default text color */
+    --spacing: 1rem;  /* Base spacing unit */
+  }
+
+
 header {
     display: flex;  /* Flexbox for alignment */
     align-items: center;  /* Center items vertically */
