@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <img src="/chef-enzo.svg" alt="Chef Enzo" />
-      <h1><strong>Chef Enzo</strong></h1>
+      <h1>Chef Enzo</h1>
     </header>
   )
 }
