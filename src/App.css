@@ -11,4 +11,9 @@ header {
     display: flex;  /* Flexbox for alignment */
     align-items: center;  /* Center items vertically */
     justify-content: center;  /* Align items to the center */
+    background-color: var(--secondary-color);
+    padding: var(--spacing);  /* Padding around the header */
+    gap: calc(0.5 * var(--spacing));  /* Space between header elements */
+    color: var(--text-color);  /* Text color for header */
 }
+
