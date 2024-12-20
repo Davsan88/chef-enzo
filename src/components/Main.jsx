@@ -3,13 +3,13 @@ import React from 'react'
 const Main = () => {
   return (
     <main>
-      <form>
+      <form className='form'>
         <input 
           type="text" 
           placeholder="e.g. avocado"
           aria-label="Add ingredient" 
         />
-        <button>Add Ingredient</button>
+        <button>Add ingredient</button>
       </form>
     </main>
   )
