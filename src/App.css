@@ -1,28 +1,57 @@
 /* Define CSS Variables */
 :root {
-    --primary-color: #fafaf8;  /* Primary color used for main body */
-    --secondary-color: #ffffff;  /* Secondary color used for header */
-    --text-color: #1b1b1b;  /* Default text color */
-    --spacing: 1rem;  /* Base spacing unit */
-  }
+    --primary-color: #fafaf8;  /* Main body background color */
+    --secondary-color: #ffffff;  /* Header background color */
+    --text-color: #1b1b1b;  /* Default text color for text elements */
+    --spacing: 1rem;  /* Base spacing unit used for padding and margins */
+}
 
 header {
-    display: flex;  /* Flexbox for alignment */
-    align-items: center;  /* Center items vertically */
-    justify-content: center;  /* Align items to the center */
-    background-color: var(--secondary-color);
-    padding: var(--spacing);  /* Padding around the header */
-    gap: calc(0.5 * var(--spacing));  /* Space between header elements */
-    color: var(--text-color);  /* Text color for header */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    display: flex;  /* Use flexbox for layout alignment */
+    align-items: center;  /* Vertically align items to the center */
+    justify-content: center;  /* Horizontally align items to the center */
+    background-color: var(--secondary-color);  /* Set header background color */
+    padding: var(--spacing);  /* Add padding around the header */
+    gap: calc(0.5 * var(--spacing));  /* Space between elements within the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for a floating effect */
 }
 
 header img {
-    width: clamp(3rem, 5vw, 4rem);  /* Responsive image width */
-    height: auto;  /* Maintain aspect ratio */
+    width: clamp(3rem, 5vw, 4rem);  /* Ensure responsive scaling of the image */
+    height: auto;  /* Maintain the aspect ratio of the image */
 }
 
 header h1 {
-    font-size: clamp(1.5rem, 2.5vw, 2rem);  /* Responsive font size for heading */    
-    font-weight: 400;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);  /* Dynamically adjust font size */
+    font-weight: 400;  /* Set a lighter font weight for the heading */
+}
+
+.form {
+    display: flex;  /* Use flexbox for layout */
+    justify-content: center;  /* Center align form elements horizontally */
+    gap: var(--spacing);  /* Space between form elements */
+    margin-top: 3rem;  /* Add margin above the form */
+}
+
+.form > input {
+    border-radius: 6px;  /* Add rounded corners to input fields */
+    padding: calc(0.5 * var(--spacing)) var(--spacing);  /* Internal padding for the input */
+    border: 1px solid #D5D4D8;  /* Light gray border for input fields */
+    text-indent: 3px;  /* Add indentation for the text inside the input */
+    font-size: clamp(1rem, 2vw, 1.25rem);  /* Make font size responsive */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);  /* Add a subtle shadow for depth */
+}
+
+.form > button {
+    font-family: 'Inter', sans-serif;  /* Use modern sans-serif font */
+    border-radius: 6px;  /* Rounded corners for the button */
+    border: none;  /* Remove default button border */
+    background-color: var(--text-color);  /* Set button background to default text color */
+    color: var(--primary-color);  /* Set button text color to primary color */
+    padding: calc(0.5 * var(--spacing)) var(--spacing);  /* Add padding inside the button */
+}
+
+form > button::before {
+    content: "+";  /* Add a plus symbol before the button text */
+    margin-right: 0.5rem;  /* Space between the plus symbol and button text */
 }
