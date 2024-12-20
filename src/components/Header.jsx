@@ -1,5 +1,5 @@
 import React from 'react'
-import chefEnzoLogo from '/public/chef-enzo-white.svg'
+import chefEnzoLogo from '../assets/chef-enzo.svg'
 
 const Header = () => {
   return (
