@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Main = () => {
+
+  const [ingredients, setIngredients] = useState()
+  
+
+
   return (
     <main>
       <form className='form'>
