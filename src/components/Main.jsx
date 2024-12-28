@@ -25,6 +25,9 @@ const Main = () => {
         />
         <button>Add ingredient</button>
       </form>
+      <ul>
+        {ingredientsListItems}
+      </ul>
     </main>
   )
 }
