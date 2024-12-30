@@ -79,9 +79,9 @@ ul.ingredients-list {
 }
 
 ul.ingredients-list > li {
-    color: #475467;
-    line-height: var(--line-height);
-    font-size: var(--font-size-medium);
+    color: #475467;  /* Set text color for list items */
+    line-height: var(--line-height, 1.75);  /* Ensure good readability with proper line height */
+    font-size: var(--font-size-medium);  /* Use medium font size for the list */
 }
 
 
