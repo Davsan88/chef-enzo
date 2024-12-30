@@ -4,6 +4,7 @@
     --secondary-color: #ffffff;  /* Header background color */
     --text-color: #1b1b1b;  /* Default text color for text elements */
     --spacing: 1rem;  /* Base spacing unit used for padding and margins */
+    --font-size-small: 0.875rem; /* Small font size for text */
     --font-size-medium: clamp(1rem, 2vw, 1.25rem);  /* For body text */
     --font-size-large: clamp(1.5rem, 2.5vw, 2rem);  /* For headings */
 }
@@ -93,9 +94,22 @@ ul.ingredients-list > li {
     flex-direction: column;  /* Stack items vertically for mobile-first design */
     align-items: flex-start;  /* Align items to the start for a clean layout */
     border-radius: 8px;  /* Rounded corners for the container */
-    background: var(--background-muted);  /* Use muted background for a soft look */
+    background: #F0EFEB;  /* Use muted background for a soft look */
     padding: var(--spacing);  /* Add spacing inside the container */
 }
+
+.get-recipe-container h3 {
+    font-size: 1.25rem;  /* Set font size for the heading */
+    font-weight: 500;  /* Use a semi-bold weight for emphasis */
+    margin-bottom: var(--spacing);  /* Add spacing below the heading */
+}
+
+.get-recipe-container p {
+    color: #6B7280;  /* Use muted text color */
+    font-size: var(--font-size-small);  /* Smaller font size for secondary text */
+    margin-bottom: var(--spacing);  /* Add spacing below the paragraph */
+}
+
 
 
 
