@@ -130,6 +130,10 @@ ul.ingredients-list > li {
     font-weight: 400;  /* Regular font weight for body text */
 }
 
+.suggested-recipe-container ul li, 
+.suggested-recipe-container ol li {
+    margin-bottom: calc(0.5 * var(--spacing));  /* Add spacing between list items */
+}
 
 
 
