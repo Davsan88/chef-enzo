@@ -56,7 +56,6 @@ form > button::before {
     margin-right: 0.5rem;  /* Space between the plus symbol and button text */
 }
 
-
 .form > button:hover {
     background-color: var(--secondary-color);
     color: var(--text-color);
@@ -67,6 +66,16 @@ form > button::before {
     transform: scale(0.95);
 }
 
+/* Main Content Styles */
+main {
+    padding: var(--spacing) calc(3 * var(--spacing));  
+}
+
+
+/* Ingredients List */
+ul.ingredients-list {
+    margin-bottom: calc(3 * var(--spacing)); 
+}
 
 
 
