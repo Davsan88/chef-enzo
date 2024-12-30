@@ -6,8 +6,6 @@ const IngredientList = ({ ingredients, toggleRecipeShown }) => {
         <li key={ingredient}>{ingredient}</li>
       ))
 
-    
-
     return (
         <section>
             <h2>Ingredients on hand:</h2>
