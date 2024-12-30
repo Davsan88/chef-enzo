@@ -122,6 +122,14 @@ ul.ingredients-list > li {
 }
 
 
+/* Suggested Recipe */
+.suggested-recipe-container {
+    color: #475467;  /* Text color for the container */
+    line-height: 1.75;  /* Maintain consistent line height */
+    font-size: var(--font-size-medium);  /* Use medium font size */
+    font-weight: 400;  /* Regular font weight for body text */
+}
+
 
 
 
