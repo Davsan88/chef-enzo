@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import EnzoRecipe from './EnzoRecipe'
 
 const Home = () => {
 
@@ -44,6 +45,7 @@ const Home = () => {
         </div>}
       </section>}
 
+      {recipeShown && <EnzoRecipe />}
       
     </main>
   )
