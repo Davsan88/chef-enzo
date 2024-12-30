@@ -75,7 +75,7 @@ main {
 
 /* Ingredients List */
 ul.ingredients-list {
-    margin-bottom: calc(3 * var(--spacing)); 
+    margin-bottom: calc(3 * var(--spacing));  /* Add spacing below the ingredients list */
 }
 
 ul.ingredients-list > li {
