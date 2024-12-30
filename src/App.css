@@ -64,12 +64,12 @@ form > button::before {
 }
 
 .form > button:active {
-    transform: scale(0.95);
+    transform: scale(0.95);  /* Slightly shrink the button on click for a tactile feel */
 }
 
 /* Main Content Styles */
 main {
-    padding: var(--spacing) calc(3 * var(--spacing));  
+    padding: var(--spacing) calc(3 * var(--spacing));   /* Add spacing around main content */
 }
 
 
