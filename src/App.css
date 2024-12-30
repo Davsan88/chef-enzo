@@ -4,6 +4,8 @@
     --secondary-color: #ffffff;  /* Header background color */
     --text-color: #1b1b1b;  /* Default text color for text elements */
     --spacing: 1rem;  /* Base spacing unit used for padding and margins */
+    --font-size-medium: clamp(1rem, 2vw, 1.25rem);  /* For body text */
+    --font-size-large: clamp(1.5rem, 2.5vw, 2rem);  /* For headings */
 }
 
 header {
@@ -22,7 +24,7 @@ header img {
 }
 
 header h1 {
-    font-size: clamp(1.5rem, 2.5vw, 2rem);  /* Dynamically adjust font size */
+    font-size: var(--font-size-large);  /* Dynamically adjust font size */
     font-weight: 400;  /* Set a lighter font weight for the heading */
 }
 
@@ -38,7 +40,7 @@ header h1 {
     padding: calc(0.5 * var(--spacing)) var(--spacing);  /* Internal padding for the input */
     border: 1px solid #D5D4D8;  /* Light gray border for input fields */
     text-indent: 3px;  /* Add indentation for the text inside the input */
-    font-size: clamp(1rem, 2vw, 1.25rem);  /* Make font size responsive */
+    font-size: var(--font-size-medium);  /* Make font size responsive */
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);  /* Add a subtle shadow for depth */
 }
 
@@ -80,20 +82,19 @@ ul.ingredients-list {
 
 ul.ingredients-list > li {
     color: #475467;  /* Set text color for list items */
-    line-height: var(--line-height, 1.75);  /* Ensure good readability with proper line height */
+    line-height: 1.75;  /* Ensure good readability with proper line height */
     font-size: var(--font-size-medium);  /* Use medium font size for the list */
 }
 
 
 /* Recipe Container */
 .get-recipe-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    border-radius: 8px;
-    background: var(--background-muted);
-    padding: var(--spacing);
+    display: flex;  /* Use flexbox for alignment */
+    flex-direction: column;  /* Stack items vertically for mobile-first design */
+    align-items: flex-start;  /* Align items to the start for a clean layout */
+    border-radius: 8px;  /* Rounded corners for the container */
+    background: var(--background-muted);  /* Use muted background for a soft look */
+    padding: var(--spacing);  /* Add spacing inside the container */
 }
 
 
