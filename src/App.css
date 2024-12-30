@@ -57,11 +57,12 @@ form > button::before {
 }
 
 .form > button:hover {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    background-color: var(--secondary-color);  /* Change background color on hover */
+    color: var(--text-color);  /* Adjust text color for contrast on hover */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);  /* Add a stronger shadow effect */
+    cursor: pointer;  /* Change cursor to pointer for better UX */
 }
+
 .form > button:active {
     transform: scale(0.95);
 }
@@ -77,6 +78,23 @@ ul.ingredients-list {
     margin-bottom: calc(3 * var(--spacing)); 
 }
 
+ul.ingredients-list > li {
+    color: #475467;
+    line-height: var(--line-height);
+    font-size: var(--font-size-medium);
+}
+
+
+/* Recipe Container */
+.get-recipe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-radius: 8px;
+    background: var(--background-muted);
+    padding: var(--spacing);
+}
 
 
 
