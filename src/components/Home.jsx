@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 
-const Main = () => {
+const Home = () => {
 
-  const [ingredients, setIngredients] = useState([])
+  const [ingredients, setIngredients] = useState(["avocado", "tomato", "red onion", "chili"])
+
+  
   
   const ingredientsListItems = ingredients.map(ingredient => (
     <li key={ingredient}>{ingredient}</li>
@@ -33,4 +35,4 @@ const Main = () => {
 }
 
 
-export default Main
+export default Home
