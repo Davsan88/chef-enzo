@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import EnzoRecipe from './EnzoRecipe'
 import IngredientList from './IngredientList'
+import EnzoRecipe from './EnzoRecipe'
 
 const Home = () => {
 
