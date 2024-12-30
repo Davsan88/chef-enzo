@@ -4,7 +4,7 @@ const Home = () => {
 
   const [ingredients, setIngredients] = useState(["avocado", "tomato", "red onion", "chili"])
 
-  
+  const [recipeShown, setRecipeShown] = React.useState(false)
   
   const ingredientsListItems = ingredients.map(ingredient => (
     <li key={ingredient}>{ingredient}</li>
