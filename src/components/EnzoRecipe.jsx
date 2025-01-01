@@ -3,7 +3,6 @@ import React from 'react'
 
 const EnzoRecipe = () => {
 
-
     return (
         <section>
             <h2>Chef Claude Recommends:</h2>
