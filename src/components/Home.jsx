@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import IngredientList from './IngredientList'
 import EnzoRecipe from './EnzoRecipe'
+import { getRecipeFromMistral } from '../ai'
 
 const Home = () => {
 
