@@ -12,6 +12,7 @@ const Home = () => {
 
   function fetchRecipe = async () => {
     const generatedRecipe = await getRecipeFromMistral(ingredients)
+    setRecipe(generatedRecipe)
   }
 
 
