@@ -1,12 +1,20 @@
 import { HfInference } from "@huggingface/inference";
 
-// Ensure you're using the environment variable for your API key
-const hf = new HfInference(import.meta.env.VITE_HF_ACCESS_TOKEN);
 
 // System prompt for the AI assistant
 const SYSTEM_PROMPT = `
-You are an assistant that receives a list of ingredients that a user has and suggests a recipe they could make with some or all of those ingredients. You don't need to use every ingredient they mention in your recipe. The recipe can include additional ingredients they didn't mention, but try not to include too many extra ingredients. Format your response in markdown to make it easier to render to a web page.
+You are an assistant that receives a list of ingredients provided by a user and suggests a recipe they can make using most or all of those ingredients.
+
+Focus on using as many of the user's ingredients as possible.
+You may suggest additional ingredients, but avoid recommending meat, fish, or dairy if none are included in the user's provided list.
+Limit the number of additional ingredients to a reasonable amount to keep the recipe accessible.
+Provide clear instructions for preparing the recipe.
+Format your response in markdown for easy rendering on a web page.
 `;
+
+// Ensure you're using the environment variable for your API key
+const hf = new HfInference(import.meta.env.VITE_HF_ACCESS_TOKEN);
+
 
 // Function to fetch recipe suggestions
 export async function getRecipeFromMistral(ingredientsArr) {
