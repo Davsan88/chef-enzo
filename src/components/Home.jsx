@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import IngredientList from './IngredientList'
 import EnzoRecipe from './EnzoRecipe'
+import { getRecipeFromMistral } from '../ai'
 
 
 const Home = () => {
 
   const [ingredients, setIngredients] = useState(["avocado", "tomato", "red onion", "chili"])
 
-  const [recipeShown, setRecipeShown] = useState(false)
+  const [recipe, setRecipe] = useState("")
 
   function fetchRecipe = async () => {
-
+    const generatedRecipe = await getRecipeFromMistral(ingredients)
   }
 
 
