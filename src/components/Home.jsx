@@ -6,9 +6,7 @@ import { getRecipeFromMistral } from '../ai'
 
 const Home = () => {
 
-  const [ingredients, setIngredients] = useState(
-    ["avocado", "tomato", "red onion", "chili"]
-  )
+  const [ingredients, setIngredients] = useState([])
 
   const [recipe, setRecipe] = useState("")
 
