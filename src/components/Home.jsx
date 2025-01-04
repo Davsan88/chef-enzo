@@ -6,15 +6,19 @@ import { getRecipeFromMistral } from '../ai'
 
 const Home = () => {
 
-  const [ingredients, setIngredients] = useState(["avocado", "tomato", "red onion", "chili"])
+  const [ingredients, setIngredients] = useState(
+    ["avocado", "tomato", "red onion", "chili"]
+  )
 
   const [recipe, setRecipe] = useState("")
 
-  function fetchRecipe = async () => {
+  const fetchRecipe = async () => {
+    console.log("Ingredients being passed:", ingredients);
     const generatedRecipe = await getRecipeFromMistral(ingredients)
     setRecipe(generatedRecipe)
+    console.log("Generated Recipe:", generatedRecipe);
   }
-
+  
   function addIngredient(formData) {
     const newIngredient = formData.get("ingredient")
     setIngredients(prevIngredient => [...prevIngredient, newIngredient])
