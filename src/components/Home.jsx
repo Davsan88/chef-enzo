@@ -15,7 +15,6 @@ const Home = () => {
     setRecipe(generatedRecipe)
   }
 
-
   function addIngredient(formData) {
     const newIngredient = formData.get("ingredient")
     setIngredients(prevIngredient => [...prevIngredient, newIngredient])
@@ -40,7 +39,7 @@ const Home = () => {
           fetchRecipe={fetchRecipe}
         />}
 
-      {recipeShown && <EnzoRecipe />}
+      {recipe && <EnzoRecipe recipe={recipe} />}
 
     </main>
   )
