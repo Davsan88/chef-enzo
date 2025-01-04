@@ -1,17 +1,16 @@
 import React, { useState } from 'react'
 import IngredientList from './IngredientList'
 import EnzoRecipe from './EnzoRecipe'
-import { getRecipeFromMistral } from '../ai'
+
 
 const Home = () => {
 
   const [ingredients, setIngredients] = useState(["avocado", "tomato", "red onion", "chili"])
 
-  const [recipeShown, setRecipeShown] = React.useState(false)
+  const [recipeShown, setRecipeShown] = useState(false)
 
+  function fetchRecipe = async () => {
 
-  function toggleRecipeShown() {
-    setRecipeShown(prevShown => !prevShown)
   }
 
 
@@ -36,7 +35,7 @@ const Home = () => {
       {ingredients.length > 0 &&
         <IngredientList
           ingredients={ingredients}
-          toggleRecipeShown={toggleRecipeShown}
+          fetchRecipe={fetchRecipe}
         />}
 
       {recipeShown && <EnzoRecipe />}
