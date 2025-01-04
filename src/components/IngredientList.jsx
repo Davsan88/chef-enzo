@@ -1,7 +1,6 @@
 import React from 'react'
-import { getRecipeFromMistral } from '../ai'
 
-const IngredientList = ({ ingredients, toggleRecipeShown }) => {
+const IngredientList = ({ ingredients, fetchRecipe }) => {
 
     const ingredientsListItems = ingredients.map(ingredient => (
         <li key={ingredient}>{ingredient}</li>
@@ -16,7 +15,7 @@ const IngredientList = ({ ingredients, toggleRecipeShown }) => {
                     <h3>Ready for a recipe?</h3>
                     <p>Generate a recipe from your list of ingredients.</p>
                 </div>
-                <button onClick={getRecipeFromMistral}>Get a recipe</button>
+                <button onClick={fetchRecipe}>Get a recipe</button>
             </div>}
         </section>
     )
