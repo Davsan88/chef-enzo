@@ -121,6 +121,17 @@ ul.ingredients-list > li {
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);  /* Add subtle shadow */
 }
 
+.get-recipe-container button:hover {
+    background-color: var(--primary-color);  /* Change background color on hover */
+    color: #D17557;  /* Adjust text color for contrast on hover */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);  /* Add a stronger shadow effect */
+    cursor: pointer;  /* Change cursor to pointer for better UX */
+}
+
+.get-recipe-container button:active {
+    transform: scale(0.95);  /* Slightly shrink the button on click for a tactile feel */
+}
+
 
 /* Suggested Recipe */
 .suggested-recipe-container {
