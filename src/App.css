@@ -235,7 +235,10 @@ ul.ingredients-list li {
         /* Adjust padding for smaller screens */
     }
 
-   
+    .form {
+        flex-direction: column; /* Stack form elements vertically */
+        gap: calc(0.5 * var(--spacing)); /* Reduce gap between elements */
+    }
 
     
 }
