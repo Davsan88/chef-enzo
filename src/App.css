@@ -275,6 +275,8 @@ ul.ingredients-list li {
 
     .get-recipe-container button {
         width: 100%; /* Make the button full width */
+        padding: calc(0.75 * var(--spacing)) calc(1.5 * var(--spacing)); /* Adjust padding */
+        font-size: var(--font-size-medium); /* Adjust font size */
     }
    
 }
