@@ -247,6 +247,13 @@ ul.ingredients-list li {
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for modern look */
     }
 
+    .form > button {
+        width: auto; /* Adjust button width to fit content */
+        padding: calc(0.75 * var(--spacing)) calc(1.5 * var(--spacing));
+        font-size: var(--font-size-medium); /* Adjust font size */
+        transition: background-color 0.2s ease, transform 0.1s ease; /* Add smooth transition */
+    }
+
     .form input {
         flex: 1; /* Allow input to grow and take up available space */
         min-width: 200px; /* Prevent input from becoming too small */
