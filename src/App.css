@@ -245,6 +245,10 @@ ul.ingredients-list li {
         text-align: center; /* Center text */
     }
 
+    .get-recipe-container h3 {
+        font-size: var(--font-size-medium); /* Adjust font size */
+    }
+
     
 
     
