@@ -236,8 +236,15 @@ ul.ingredients-list li {
     }
 
     .form {
-        flex-direction: column; /* Stack form elements vertically */
-        gap: calc(0.5 * var(--spacing)); /* Reduce gap between elements */
+        flex-direction: row; /* Arrange inputs and buttons side-by-side */
+        justify-content: center; /* Center the form in the container */
+        gap: calc(1.5 * var(--spacing)); /* Increase gap for a more open look */
+        max-width: 500px; /* Limit the width of the form */
+        margin: 0 auto; /* Center the form */
+        padding: var(--spacing); /* Add internal padding */
+        border: 1px solid #D5D4D8; /* Subtle border for form area */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for modern look */
     }
 
     .get-recipe-container {
@@ -251,5 +258,6 @@ ul.ingredients-list li {
 
     .get-recipe-container button {
         width: 100%; /* Make the button full width */
-    }   
+    }
+   
 }
