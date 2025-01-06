@@ -150,6 +150,8 @@ ul.ingredients-list li {
     /* Use muted background for a soft look */
     padding: var(--spacing);
     /* Add spacing inside the container */
+    border: 1px solid #D5D4D8; /* Subtle border for the container */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for modern look */
 }
 
 .get-recipe-container h3 {
