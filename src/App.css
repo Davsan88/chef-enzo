@@ -155,7 +155,7 @@ ul.ingredients-list li {
 }
 
 .get-recipe-container h3 {
-    font-size: 1.25rem;
+    font-size: var(--font-size-medium);
     /* Set font size for the heading */
     font-weight: 500;
     /* Use a semi-bold weight for emphasis */
@@ -183,7 +183,7 @@ ul.ingredients-list li {
     /* Set text color to primary color */
     padding: calc(0.5 * var(--spacing)) var(--spacing);
     /* Add internal spacing */
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-medium);
     /* Small font size for the button */
     cursor: pointer;
     /* Pointer cursor for better UX */
@@ -277,6 +277,11 @@ ul.ingredients-list li {
         width: 100%; /* Make the button full width */
         padding: calc(0.75 * var(--spacing)) calc(1.5 * var(--spacing)); /* Adjust padding */
         font-size: var(--font-size-medium); /* Adjust font size */
+    }
+
+    ul.ingredients-list li {
+        font-size: var(--font-size-small);
+        /* Use small font size for the list */
     }
    
 }
