@@ -20,12 +20,12 @@ header {
 }
 
 header img {
-    width: clamp(3rem, 5vw, 4rem);  /* Ensure responsive scaling of the image */
+    width: clamp(2rem, 10vw, 3rem);  /* Ensure responsive scaling of the image */
     height: auto;  /* Maintain the aspect ratio of the image */
 }
 
 header h1 {
-    font-size: var(--font-size-large);  /* Dynamically adjust font size */
+    font-size: var(--font-size-medium);  /* Dynamically adjust font size */
     font-weight: 400;  /* Set a lighter font weight for the heading */
 }
 
@@ -36,37 +36,38 @@ header h1 {
     margin-top: 3rem;  /* Add margin above the form */
 }
 
-.form > input {
+.form input {
     border-radius: 6px;  /* Add rounded corners to input fields */
-    padding: calc(0.5 * var(--spacing)) var(--spacing);  /* Internal padding for the input */
+    padding: var(--spacing);  /* Internal padding for the input */
     border: 1px solid #D5D4D8;  /* Light gray border for input fields */
     text-indent: 3px;  /* Add indentation for the text inside the input */
-    font-size: var(--font-size-medium);  /* Make font size responsive */
+    font-size: var(--font-size-small);  /* Make font size responsive */
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);  /* Add a subtle shadow for depth */
 }
 
-.form > button {
+.form button {
     font-family: 'Inter', sans-serif;  /* Use modern sans-serif font */
     border-radius: 6px;  /* Rounded corners for the button */
     border: none;  /* Remove default button border */
     background-color: var(--text-color);  /* Set button background to default text color */
     color: var(--primary-color);  /* Set button text color to primary color */
     padding: calc(0.5 * var(--spacing)) var(--spacing);  /* Add padding inside the button */
+    font-size: var(--font-size-small); /* Reduce button font size */
 }
 
-form > button::before {
+form button::before {
     content: "+";  /* Add a plus symbol before the button text */
     margin-right: 0.5rem;  /* Space between the plus symbol and button text */
 }
 
-.form > button:hover {
+.form button:hover {
     background-color: var(--secondary-color);  /* Change background color on hover */
     color: var(--text-color);  /* Adjust text color for contrast on hover */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);  /* Add a stronger shadow effect */
     cursor: pointer;  /* Change cursor to pointer for better UX */
 }
 
-.form > button:active {
+.form button:active {
     transform: scale(0.95);  /* Slightly shrink the button on click for a tactile feel */
 }
 
@@ -81,10 +82,10 @@ ul.ingredients-list {
     margin-bottom: calc(3 * var(--spacing));  /* Add spacing below the ingredients list */
 }
 
-ul.ingredients-list > li {
+ul.ingredients-list li {
     color: #475467;  /* Set text color for list items */
     line-height: 1.75;  /* Ensure good readability with proper line height */
-    font-size: var(--font-size-medium);  /* Use medium font size for the list */
+    font-size: var(--font-size-small);  /* Use small font size for the list */
 }
 
 
@@ -137,13 +138,13 @@ ul.ingredients-list > li {
 .suggested-recipe-container {
     color: #475467;  /* Text color for the container */
     line-height: 1.75;  /* Maintain consistent line height */
-    font-size: var(--font-size-medium);  /* Use medium font size */
+    font-size: var(--font-size-small);  /* Use small font size */
     font-weight: 400;  /* Regular font weight for body text */
 }
 
 .suggested-recipe-container ul li, 
 .suggested-recipe-container ol li {
-    margin-bottom: calc(0.5 * var(--spacing));  /* Add spacing between list items */
+    margin-bottom: calc(0.25 * var(--spacing));  /* Add spacing between list items */
 }
 
 
