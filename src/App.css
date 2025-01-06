@@ -249,7 +249,7 @@ ul.ingredients-list li {
         font-size: var(--font-size-medium); /* Adjust font size */
     }
 
-    
-
-    
+    .get-recipe-container button {
+        width: 100%; /* Make the button full width */
+    }   
 }
