@@ -228,6 +228,14 @@ ul.ingredients-list li {
 /* Small Devices (Tablets, 768px and below) */
 @media (min-width: 768px) {
 
-    
+    header {
+        flex-direction: column;
+        /* Stack header elements vertically */
+        padding: var(--spacing);
+        /* Adjust padding for smaller screens */
+    }
+
+   
+
     
 }
