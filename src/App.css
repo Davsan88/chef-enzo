@@ -240,5 +240,12 @@ ul.ingredients-list li {
         gap: calc(0.5 * var(--spacing)); /* Reduce gap between elements */
     }
 
+    .get-recipe-container {
+        align-items: center; /* Center-align items */
+        text-align: center; /* Center text */
+    }
+
+    
+
     
 }
