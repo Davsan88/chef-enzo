@@ -278,10 +278,11 @@ ul.ingredients-list li {
         padding: calc(0.75 * var(--spacing)) calc(1.5 * var(--spacing)); /* Adjust padding */
         font-size: var(--font-size-medium); /* Adjust font size */
     }
+}
 
-    ul.ingredients-list li {
-        font-size: var(--font-size-small);
-        /* Use small font size for the list */
+/* Large Devices (Desktops, 1024px and above) */
+@media (min-width: 1200px) {
+    main {
+        padding: calc(2 * var(--spacing)) calc(5 * var(--spacing)); /* Add more padding for larger screens */
     }
-   
 }
