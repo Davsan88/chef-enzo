@@ -242,7 +242,7 @@ ul.ingredients-list li {
         justify-content: center; /* Center the form in the container */
         gap: calc(1.5 * var(--spacing)); /* Increase gap for a more open look */
         max-width: 500px; /* Limit the width of the form */
-        margin: 0 auto; /* Center the form */
+        margin: calc(2 * var(--spacing)) auto; /* Center the form */
         padding: var(--spacing); /* Add internal padding */
         border: 1px solid #D5D4D8; /* Subtle border for form area */
         border-radius: 8px; /* Rounded corners */
@@ -282,15 +282,34 @@ ul.ingredients-list li {
 
 /* Large Devices (Desktops, 1024px and above) */
 @media (min-width: 1200px) {
+    
+    
+    .form {
+        max-width: 600px; /* Limit the width of the form */
+        margin: calc(3 * var(--spacing)) auto; /* Center the form */
+        padding: var(--spacing); /* Add internal padding */
+    }
+    
     main {
         padding: calc(2 * var(--spacing)) calc(5 * var(--spacing)); /* Add more padding for larger screens */
     }
 
+    /* Ingredients List */
 
-    .form {
-        max-width: 600px; /* Limit the width of the form */
-        margin: 0 auto; /* Center the form */
-       
-        
+    h2 {
+        font-size: calc(1.25 * var(--font-size-medium));
     }
+
+    ul.ingredients-list {
+        margin-bottom: calc(3 * var(--spacing));  /* Add spacing below the ingredients list */
+        /* background-color: #D17557; */
+    }
+
+    ul.ingredients-list li {
+        color: #475467;  /* Set text color for list items */
+        line-height: 1.75;  /* Ensure good readability with proper line height */
+        font-size: var(--font-size-medium);  /* Use small font size for the list */
+    }
+    
+
 }
