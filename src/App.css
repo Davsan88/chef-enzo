@@ -12,7 +12,7 @@
     /* Small font size for text */
     --font-size-medium: clamp(1rem, 2vw, 1.25rem);
     /* For body text */
-    --font-size-large: clamp(1.5rem, 2.5vw, 2rem);
+    --font-size-large: clamp(1.25rem, 2.25vw, 1.75rem);
     /* For headings */
 }
 
@@ -297,19 +297,34 @@ ul.ingredients-list li {
     /* Ingredients List */
 
     h2 {
-        font-size: calc(1.25 * var(--font-size-medium));
-    }
-
-    ul.ingredients-list {
-        margin-bottom: calc(3 * var(--spacing));  /* Add spacing below the ingredients list */
-        /* background-color: #D17557; */
+        font-size: calc(1 * var(--font-size-large));
     }
 
     ul.ingredients-list li {
-        color: #475467;  /* Set text color for list items */
-        line-height: 1.75;  /* Ensure good readability with proper line height */
         font-size: var(--font-size-medium);  /* Use small font size for the list */
     }
     
+    /* Recipe Container */
+
+    .get-recipe-container {
+        max-width: 600px; /* Limit the container's width */
+        /* margin: 2rem auto; Add spacing around the container */
+        margin: calc(3 * var(--spacing)) auto; /* Center the form */
+    }
+
+    .get-recipe-container h3 {
+        font-size: var(--font-size-medium); /* Adjust font size */
+    }
+
+    .get-recipe-container button {
+        width: 100%; /* Make the button full width */
+        padding: calc(0.75 * var(--spacing)) calc(1.5 * var(--spacing)); /* Adjust padding */
+        font-size: var(--font-size-medium); /* Adjust font size */
+    }
+    
+    .suggested-recipe-container {
+        font-size: var(--font-size-medium); /* Adjust font size */
+
+    }
 
 }
