@@ -234,7 +234,7 @@ ul.ingredients-list li {
         flex-direction: column;
         /* Stack header elements vertically */
         padding: var(--spacing);
-        /* Adjust padding for smaller screens */
+        /* Adjust padding for medium screens */
     }
 
     .form {
@@ -284,5 +284,13 @@ ul.ingredients-list li {
 @media (min-width: 1200px) {
     main {
         padding: calc(2 * var(--spacing)) calc(5 * var(--spacing)); /* Add more padding for larger screens */
+    }
+
+
+    .form {
+        max-width: 600px; /* Limit the width of the form */
+        margin: 0 auto; /* Center the form */
+       
+        
     }
 }
