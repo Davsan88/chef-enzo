@@ -1,20 +1,15 @@
 /* Define CSS Variables */
 :root {
-    --primary-color: #fafaf8;
-    /* Main body background color */
-    --secondary-color: #ffffff;
-    /* Header background color */
-    --text-color: #1b1b1b;
-    /* Default text color for text elements */
-    --spacing: 1rem;
-    /* Base spacing unit used for padding and margins */
-    --font-size-small: 0.875rem;
-    /* Small font size for text */
-    --font-size-medium: clamp(1rem, 2vw, 1.25rem);
-    /* For body text */
-    --font-size-large: clamp(1.25rem, 2.25vw, 1.75rem);
-    /* For headings */
+    --primary-color: #fafaf8;  /* Main body background color */
+    --secondary-color: #ffffff;  /* Header background color */
+    --text-color: #1b1b1b;  /* Default text color for text elements */
+    --spacing: 1rem;  /* Base spacing unit used for padding and margins */
+    --font-size-small: 0.875rem;  /* Small font size for text */
+    --font-size-medium: clamp(1rem, 2vw, 1.25rem);  /* For body text */
+    --font-size-large: clamp(1.25rem, 2.25vw, 1.75rem);  /* For headings */
 }
+
+
 
 header {
     display: flex;
