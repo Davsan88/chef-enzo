@@ -9,6 +9,7 @@
     --font-size-large: clamp(1.25rem, 2.25vw, 1.75rem);  /* For headings */
 }
 
+
 /* Header Section */
 
 header {
@@ -30,6 +31,7 @@ header h1 {
     font-size: var(--font-size-medium);  /* Dynamically adjust font size */
     font-weight: 400;  /* Set a lighter font weight for the heading */
 }
+
 
 /* Form Section */
 
@@ -75,7 +77,9 @@ form button::before {
     transform: scale(0.95);  /* Slightly shrink the button on click for a tactile feel */
 }
 
+
 /* Main Content Styles */
+
 main {
     padding: var(--spacing) calc(3 * var(--spacing));
     /* Add spacing around main content */
@@ -83,19 +87,17 @@ main {
 
 
 /* Ingredients List */
+
 ul.ingredients-list {
-    margin-bottom: calc(3 * var(--spacing));
-    /* Add spacing below the ingredients list */
+    margin-bottom: calc(3 * var(--spacing));  /* Add spacing below the ingredients list */
 }
 
 ul.ingredients-list li {
-    color: #475467;
-    /* Set text color for list items */
-    line-height: 1.75;
-    /* Ensure good readability with proper line height */
-    font-size: var(--font-size-small);
-    /* Use small font size for the list */
+    color: #475467;  /* Set text color for list items */
+    line-height: 1.75;  /* Ensure good readability with proper line height */
+    font-size: var(--font-size-small);  /* Use small font size for the list */
 }
+
 
 
 /* Recipe Container */
