@@ -171,45 +171,45 @@ ul.ingredients-list li {
     }
 
     .form {
-        flex-direction: row; /* Arrange inputs and buttons side-by-side */
-        justify-content: center; /* Center the form in the container */
-        gap: calc(1.5 * var(--spacing)); /* Increase gap for a more open look */
-        max-width: 500px; /* Limit the width of the form */
-        margin: calc(2 * var(--spacing)) auto; /* Center the form */
-        padding: var(--spacing); /* Add internal padding */
-        border: 1px solid #D5D4D8; /* Subtle border for form area */
-        border-radius: 8px; /* Rounded corners */
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for modern look */
+        flex-direction: row;  /* Arrange inputs and buttons side-by-side */
+        justify-content: center;  /* Center the form in the container */
+        gap: calc(1.5 * var(--spacing));  /* Increase gap for a more open look */
+        max-width: 500px;  /* Limit the width of the form */
+        margin: calc(2 * var(--spacing)) auto;  /* Center the form */
+        padding: var(--spacing);  /* Add internal padding */
+        border: 1px solid #D5D4D8;  /* Subtle border for form area */
+        border-radius: 8px;  /* Rounded corners */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* Light shadow for modern look */
     }
 
     .form input {
-        flex: 1; /* Allow input to grow and take up available space */
-        min-width: 200px; /* Prevent input from becoming too small */
+        flex: 1;  /* Allow input to grow and take up available space */
+        min-width: 200px;  /* Prevent input from becoming too small */
     }
     
     .form button {
-        width: auto; /* Adjust button width to fit content */
+        width: auto;  /* Adjust button width to fit content */
         padding: calc(0.75 * var(--spacing)) calc(1.5 * var(--spacing));
-        font-size: var(--font-size-medium); /* Adjust font size */
-        transition: background-color 0.2s ease, transform 0.1s ease; /* Add smooth transition */
+        font-size: var(--font-size-medium);  /* Adjust font size */
+        transition: background-color 0.2s ease, transform 0.1s ease;  /* Add smooth transition */
     }
 
     .get-recipe-container {
-        align-items: center; /* Center-align items */
-        text-align: center; /* Center text */
-        max-width: 500px; /* Limit the container's width */
-        margin: 2rem auto; /* Add spacing around the container */
-        padding: var(--spacing); /* Add internal padding */
+        align-items: center;  /* Center-align items */
+        text-align: center;  /* Center text */
+        max-width: 500px;  /* Limit the container's width */
+        margin: 2rem auto;  /* Add spacing around the container */
+        padding: var(--spacing);  /* Add internal padding */
     }
 
     .get-recipe-container h3 {
-        font-size: var(--font-size-medium); /* Adjust font size */
+        font-size: var(--font-size-medium);  /* Adjust font size */
     }
 
     .get-recipe-container button {
-        width: 100%; /* Make the button full width */
-        padding: calc(0.75 * var(--spacing)) calc(1.5 * var(--spacing)); /* Adjust padding */
-        font-size: var(--font-size-medium); /* Adjust font size */
+        width: 100%;  /* Make the button full width */
+        padding: calc(0.75 * var(--spacing)) calc(1.5 * var(--spacing));  /* Adjust padding */
+        font-size: var(--font-size-medium);  /* Adjust font size */
     }
 }
 
