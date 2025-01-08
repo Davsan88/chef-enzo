@@ -81,8 +81,7 @@ form button::before {
 /* Main Content Styles */
 
 main {
-    padding: var(--spacing) calc(3 * var(--spacing));
-    /* Add spacing around main content */
+    padding: var(--spacing) calc(3 * var(--spacing));  /* Add spacing around main content */
 }
 
 
@@ -99,95 +98,66 @@ ul.ingredients-list li {
 }
 
 
-
 /* Recipe Container */
+
 .get-recipe-container {
-    display: flex;
-    /* Use flexbox for alignment */
-    flex-direction: column;
-    /* Stack items vertically for mobile-first design */
-    align-items: flex-start;
-    /* Align items to the start for a clean layout */
-    border-radius: 8px;
-    /* Rounded corners for the container */
-    background: #F0EFEB;
-    /* Use muted background for a soft look */
-    padding: var(--spacing);
-    /* Add spacing inside the container */
+    display: flex;  /* Use flexbox for alignment */
+    flex-direction: column;  /* Stack items vertically for mobile-first design */
+    align-items: flex-start;  /* Align items to the start for a clean layout */
+    border-radius: 8px;  /* Rounded corners for the container */
+    background: #F0EFEB;  /* Use muted background for a soft look */
+    padding: var(--spacing);  /* Add spacing inside the container */
     border: 1px solid #D5D4D8; /* Subtle border for the container */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for modern look */
 }
 
 .get-recipe-container h3 {
-    font-size: var(--font-size-medium);
-    /* Set font size for the heading */
-    font-weight: 500;
-    /* Use a semi-bold weight for emphasis */
-    margin-bottom: var(--spacing);
-    /* Add spacing below the heading */
+    font-size: var(--font-size-medium);  /* Set font size for the heading */
+    font-weight: 500;  /* Use a semi-bold weight for emphasis */
+    margin-bottom: var(--spacing);  /* Add spacing below the heading */
 }
 
 .get-recipe-container p {
-    color: #6B7280;
-    /* Use muted text color */
-    font-size: var(--font-size-small);
-    /* Smaller font size for secondary text */
-    margin-bottom: var(--spacing);
-    /* Add spacing below the paragraph */
+    color: #6B7280;  /* Use muted text color */
+    font-size: var(--font-size-small);  /* Smaller font size for secondary text */
+    margin-bottom: var(--spacing);  /* Add spacing below the paragraph */
 }
 
 .get-recipe-container button {
-    border: none;
-    /* Remove default border */
-    border-radius: 6px;
-    /* Rounded corners for the button */
-    background: #D17557;
-    /* Use accent color for emphasis */
-    color: var(--primary-color);
-    /* Set text color to primary color */
-    padding: calc(0.5 * var(--spacing)) var(--spacing);
-    /* Add internal spacing */
-    font-size: var(--font-size-medium);
-    /* Small font size for the button */
-    cursor: pointer;
-    /* Pointer cursor for better UX */
+    border: none;  /* Remove default border */
+    border-radius: 6px;  /* Rounded corners for the button */
+    background: #D17557;  /* Use accent color for emphasis */
+    color: var(--primary-color);  /* Set text color to primary color */
+    padding: calc(0.5 * var(--spacing)) var(--spacing);  /* Add internal spacing */
+    font-size: var(--font-size-medium);  /* Small font size for the button */
+    cursor: pointer;  /* Pointer cursor for better UX */
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
     /* Add subtle shadow */
 }
 
 .get-recipe-container button:hover {
-    background-color: var(--primary-color);
-    /* Change background color on hover */
-    color: #D17557;
-    /* Adjust text color for contrast on hover */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    /* Add a stronger shadow effect */
-    cursor: pointer;
-    /* Change cursor to pointer for better UX */
+    background-color: var(--primary-color);  /* Change background color on hover */
+    color: #D17557;  /* Adjust text color for contrast on hover */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);  /* Add a stronger shadow effect */
+    cursor: pointer;  /* Change cursor to pointer for better UX */
 }
 
 .get-recipe-container button:active {
-    transform: scale(0.95);
-    /* Slightly shrink the button on click for a tactile feel */
+    transform: scale(0.95);  /* Slightly shrink the button on click for a tactile feel */
 }
 
 
 /* Suggested Recipe */
 .suggested-recipe-container {
-    color: #475467;
-    /* Text color for the container */
-    line-height: 1.75;
-    /* Maintain consistent line height */
-    font-size: var(--font-size-small);
-    /* Use small font size */
-    font-weight: 400;
-    /* Regular font weight for body text */
+    color: #475467;  /* Text color for the container */
+    line-height: 1.75;  /* Maintain consistent line height */
+    font-size: var(--font-size-small);  /* Use small font size */
+    font-weight: 400;  /* Regular font weight for body text */
 }
 
 .suggested-recipe-container ul li,
 .suggested-recipe-container ol li {
-    margin-bottom: calc(0.25 * var(--spacing));
-    /* Add spacing between list items */
+    margin-bottom: calc(0.25 * var(--spacing));  /* Add spacing between list items */
 }
 
 
