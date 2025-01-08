@@ -230,7 +230,7 @@ ul.ingredients-list li {
     /* Ingredients List */
 
     h2 {
-        font-size: calc(1 * var(--font-size-large));
+        font-size: var(--font-size-large);
     }
 
     ul.ingredients-list li {
@@ -243,10 +243,6 @@ ul.ingredients-list li {
         max-width: 600px; /* Limit the container's width */
         /* margin: 2rem auto; Add spacing around the container */
         margin: calc(3 * var(--spacing)) auto; /* Center the form */
-    }
-
-    .get-recipe-container h3 {
-        font-size: var(--font-size-medium); /* Adjust font size */
     }
 
     .get-recipe-container button {
