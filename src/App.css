@@ -34,29 +34,19 @@ header h1 {
 /* Form Section */
 
 .form {
-    display: flex;
-    /* Use flexbox for layout */
-    justify-content: center;
-    /* Center align form elements horizontally */
-    gap: var(--spacing);
-    /* Space between form elements */
-    margin-top: 3rem;
-    /* Add margin above the form */
+    display: flex;  /* Use flexbox for layout */
+    justify-content: center;  /* Center align form elements horizontally */
+    gap: var(--spacing);  /* Space between form elements */
+    margin-top: 3rem;  /* Add margin above the form */
 }
 
 .form input {
-    border-radius: 6px;
-    /* Add rounded corners to input fields */
-    padding: var(--spacing);
-    /* Internal padding for the input */
-    border: 1px solid #D5D4D8;
-    /* Light gray border for input fields */
-    text-indent: 3px;
-    /* Add indentation for the text inside the input */
-    font-size: var(--font-size-small);
-    /* Make font size responsive */
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-    /* Add a subtle shadow for depth */
+    border-radius: 6px;  /* Add rounded corners to input fields */
+    padding: var(--spacing);  /* Internal padding for the input */
+    border: 1px solid #D5D4D8;  /* Light gray border for input fields */
+    text-indent: 3px;  /* Add indentation for the text inside the input */
+    font-size: var(--font-size-small);  /* Make font size responsive */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);  /* Add a subtle shadow for depth */
 }
 
 .form button {
