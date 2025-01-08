@@ -189,7 +189,7 @@ ul.ingredients-list li {
     
     .form button {
         width: auto;  /* Adjust button width to fit content */
-        padding: calc(0.75 * var(--spacing)) calc(1.5 * var(--spacing));
+        padding: calc(0.75 * var(--spacing)) calc(1.5 * var(--spacing));  /* Add padding inside the button */
         font-size: var(--font-size-medium);  /* Adjust font size */
         transition: background-color 0.2s ease, transform 0.1s ease;  /* Add smooth transition */
     }
