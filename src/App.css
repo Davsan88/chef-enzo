@@ -50,43 +50,29 @@ header h1 {
 }
 
 .form button {
-    font-family: 'Inter', sans-serif;
-    /* Use modern sans-serif font */
-    border-radius: 6px;
-    /* Rounded corners for the button */
-    border: none;
-    /* Remove default button border */
-    background-color: var(--text-color);
-    /* Set button background to default text color */
-    color: var(--primary-color);
-    /* Set button text color to primary color */
-    padding: calc(0.5 * var(--spacing)) var(--spacing);
-    /* Add padding inside the button */
-    font-size: var(--font-size-small);
-    /* Reduce button font size */
+    font-family: 'Inter', sans-serif;  /* Use modern sans-serif font */
+    border-radius: 6px;  /* Rounded corners for the button */
+    border: none;  /* Remove default button border */
+    background-color: var(--text-color);  /* Set button background to default text color */
+    color: var(--primary-color);  /* Set button text color to primary color */
+    padding: calc(0.5 * var(--spacing)) var(--spacing);  /* Add padding inside the button */
+    font-size: var(--font-size-small);  /* Reduce button font size */
 }
 
 form button::before {
-    content: "+";
-    /* Add a plus symbol before the button text */
-    margin-right: 0.5rem;
-    /* Space between the plus symbol and button text */
+    content: "+";  /* Add a plus symbol before the button text */
+    margin-right: 0.5rem;  /* Space between the plus symbol and button text */
 }
 
 .form button:hover {
-    background-color: var(--secondary-color);
-    /* Change background color on hover */
-    color: var(--text-color);
-    /* Adjust text color for contrast on hover */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    /* Add a stronger shadow effect */
-    cursor: pointer;
-    /* Change cursor to pointer for better UX */
+    background-color: var(--secondary-color);  /* Change background color on hover */
+    color: var(--text-color);  /* Adjust text color for contrast on hover */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);  /* Add a stronger shadow effect */
+    cursor: pointer;  /* Change cursor to pointer for better UX */
 }
 
 .form button:active {
-    transform: scale(0.95);
-    /* Slightly shrink the button on click for a tactile feel */
+    transform: scale(0.95);  /* Slightly shrink the button on click for a tactile feel */
 }
 
 /* Main Content Styles */
