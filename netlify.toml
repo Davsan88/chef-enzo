@@ -1,0 +1,8 @@
+[build]
+  functions = "netlify/functions"  # Path to your functions directory
+  publish = "dist"                 # Vite's default build output directory
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
