@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import IngredientList from './IngredientList'
 import EnzoRecipe from './EnzoRecipe'
-import { getRecipeFromMistral } from '../../ai'
 
 
 const Home = () => {
@@ -11,10 +10,23 @@ const Home = () => {
   const [recipe, setRecipe] = useState("")
 
   const fetchRecipe = async () => {
-    console.log("Ingredients being passed:", ingredients);
-    const generatedRecipe = await getRecipeFromMistral(ingredients)
-    setRecipe(generatedRecipe)
-    console.log("Generated Recipe:", generatedRecipe);
+    try {
+      const response = await fetch('/api/hfRecipe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ingredients }),
+      })
+  
+      if (!response.ok) {
+        throw new Error('Failed to fetch the recipe')
+      }
+  
+      const data = await response.json() // { recipe: "Your recipe here" }
+      setRecipe(data.recipe)
+      console.log("Generated Recipe:", data.recipe)
+    } catch (err) {
+      console.error(err)
+    }
   }
   
   function addIngredient(formData) {
