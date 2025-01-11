@@ -27,3 +27,17 @@ Welcome to the **Chef Enzo Recipe App!** This project was built following a tuto
 ---
 
 
+## 🔄 **Workflow Guide: Building the Chef Enzo Recipe App**
+
+### **1. Project Setup**
+- **Action**:
+  - Initialized a new React project using Vite.
+  - Set up a GitHub repository and connected it with GitHub Desktop for version control.
+  - Installed necessary dependencies like React, Hugging Face Inference API client, and development tools such as ESLint.
+
+- **Purpose**:
+  - Lay the groundwork for the project with proper version control and essential libraries.
+
+---
+
+
