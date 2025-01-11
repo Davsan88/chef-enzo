@@ -58,3 +58,18 @@ Welcome to the **Chef Enzo Recipe App!** This project was built following a tuto
   - Utilized React's `useState` to manage the list of ingredients.
   - Enabled real-time updates of the ingredient list as users add new items.
 
+```javascript
+const [ingredients, setIngredients] = useState([]);
+
+const addIngredient = (formData) => {
+  const newIngredient = formData.get("ingredient");
+  setIngredients(prev => [...prev, newIngredient]);
+};
+```
+
+- **Purpose**:
+  - Allow users to easily manage their list of ingredients, which is essential for generating relevant recipes.
+
+---
+
+
