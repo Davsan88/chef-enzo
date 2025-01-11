@@ -41,3 +41,15 @@ Welcome to the **Chef Enzo Recipe App!** This project was built following a tuto
 ---
 
 
+### **2. Designing the User Interface**
+- **Action**:
+  - Created React components: `Header.jsx`, `Home.jsx`, `IngredientList.jsx`, and `EnzoRecipe.jsx`.
+  - Implemented a responsive layout using CSS to ensure the app looks good on all devices.
+  - Developed a form for users to input ingredients and dynamically display the list of added ingredients.
+
+- **Purpose**:
+  - Provide an intuitive and visually appealing interface for users to interact with the app.
+
+---
+
+
