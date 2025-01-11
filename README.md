@@ -53,3 +53,8 @@ Welcome to the **Chef Enzo Recipe App!** This project was built following a tuto
 ---
 
 
+### **3. Managing Ingredients**
+- **Action**:
+  - Utilized React's `useState` to manage the list of ingredients.
+  - Enabled real-time updates of the ingredient list as users add new items.
+
