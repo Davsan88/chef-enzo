@@ -7,3 +7,12 @@ Welcome to the **Chef Enzo Recipe App!** This project was built following a tuto
 ---
 
 
+## 🚀 **What It Does**
+
+- **Add Ingredients**: Enter whatever ingredients you have—like tomatoes, basil, or avocado.
+- **Get Recipe Ideas**: Click a button, and the app uses AI (thanks to Hugging Face) to generate some delicious recipe suggestions based on your ingredients.
+- **Responsive Design**: Whether you're on your phone, tablet, or laptop, the app looks great and works smoothly.
+
+---
+
+
