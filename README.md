@@ -16,3 +16,14 @@ Welcome to the **Chef Enzo Recipe App!** This project was built following a tuto
 ---
 
 
+## 🛠️ **Technologies Used**
+
+- **Frontend**: React, JavaScript, CSS, Vite  
+- **Backend**: Netlify Functions (Serverless)  
+- **API**: Hugging Face Inference API  
+- **Deployment**: Netlify  
+- **Version Control**: GitHub  
+
+---
+
+
