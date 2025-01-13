@@ -181,3 +181,8 @@ export const handler = async (event, context) => {
 };
 ```
 
+- **Purpose**:
+  - Ensure sensitive information like the API key remains secure by handling API requests on the server side.
+
+---
+
