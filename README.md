@@ -110,3 +110,9 @@ export async function getRecipeFromMistral(ingredientsArr) {
 }
 ```
 
+- **Purpose**:
+  - Leverage AI capabilities to provide personalized and relevant recipe suggestions based on user input.
+
+---
+
+
