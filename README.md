@@ -116,3 +116,8 @@ export async function getRecipeFromMistral(ingredientsArr) {
 ---
 
 
+### **5. Securing the API Key with Netlify Functions**
+- **Action**:
+  - Implemented a serverless backend using Netlify Functions to handle API requests securely.
+  - Moved the API interaction logic from the frontend to the backend to prevent exposing the Hugging Face API key.
+
