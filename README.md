@@ -73,3 +73,8 @@ const addIngredient = (formData) => {
 ---
 
 
+### **4. Integrating Hugging Face Inference API**
+- **Action**:
+  - Used the `@huggingface/inference` library to interact with the Hugging Face API.
+  - Created a system prompt to guide the AI in generating appropriate recipe suggestions based on user-provided ingredients.
+
