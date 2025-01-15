@@ -279,3 +279,9 @@ netlify dev
 - Ensured successful builds without errors.  
 - Tested the live site to confirm functionality.
 
+- **Purpose**:
+  - Achieve a seamless deployment process with continuous integration, ensuring that updates pushed to GitHub are automatically deployed.
+
+---
+
+
