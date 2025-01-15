@@ -244,3 +244,19 @@ HF_ACCESS_TOKEN=your_hugging_face_api_key
 ---
 
 
+### **7. Testing and Deployment**
+
+#### **Action**
+
+- Tested the Netlify Functions locally using Netlify CLI (`netlify dev`) to ensure proper functionality.  
+- Connected the GitHub repository to Netlify for continuous deployment.  
+- Verified that the application works as expected in the live environment without exposing the API key.
+
+#### **Steps Taken**
+
+**Installed Netlify CLI**:
+
+```bash
+npm install -g netlify-cli
+```
+
