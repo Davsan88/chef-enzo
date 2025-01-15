@@ -260,3 +260,10 @@ HF_ACCESS_TOKEN=your_hugging_face_api_key
 npm install -g netlify-cli
 ```
 
+**Started Local Development Server**:
+
+```bash
+netlify dev
+```
+
+- Opened `http://localhost:8888` in the browser to see the app in action.
