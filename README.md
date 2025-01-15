@@ -232,3 +232,15 @@ const fetchRecipe = async () => {
   - Removed the `VITE_` prefix from the API key in the `.env` file to prevent exposure in the frontend.
   - Added `HF_ACCESS_TOKEN` to Netlify's environment variables for secure access in serverless functions.
 
+#### **`.env` File**
+
+```env
+HF_ACCESS_TOKEN=your_hugging_face_api_key
+```
+
+- **Purpose**:
+  - Maintain the security of the API key by restricting its access to serverless functions only.
+
+---
+
+
