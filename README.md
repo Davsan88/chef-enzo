@@ -183,8 +183,6 @@ export const handler = async (event, context) => {
 };
 ```
 
----
-
 #### **Updated `netlify.toml` Configuration**
 
 ```toml
@@ -198,8 +196,29 @@ export const handler = async (event, context) => {
   status = 200
 ```
 
----
+#### **Modified Frontend (`Home.jsx`) to Use the Netlify Function Endpoint**
 
+```javascript
+const fetchRecipe = async () => {
+  try {
+    const response = await fetch('/api/hfRecipe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ingredients }),
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch the recipe');
+    }
+
+    const data = await response.json(); // { recipe: "Your recipe here" }
+    setRecipe(data.recipe);
+    console.log("Generated Recipe:", data.recipe);
+  } catch (err) {
+    console.error(err);
+  }
+};
+```
 
 - **Purpose**:
   - Ensure sensitive information like the API key remains secure by handling API requests on the server side.
