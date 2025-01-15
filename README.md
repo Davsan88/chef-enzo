@@ -267,3 +267,10 @@ netlify dev
 ```
 
 - Opened `http://localhost:8888` in the browser to see the app in action.
+
+**Connected GitHub Repository to Netlify**:
+
+- Authorized Netlify to access the GitHub repository.  
+- Configured build settings (`npm run build` as the build command and `dist` as the publish directory).  
+- Added `HF_ACCESS_TOKEN` in Netlify's environment variables settings.
+
