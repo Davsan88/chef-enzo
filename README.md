@@ -274,3 +274,8 @@ netlify dev
 - Configured build settings (`npm run build` as the build command and `dist` as the publish directory).  
 - Added `HF_ACCESS_TOKEN` in Netlify's environment variables settings.
 
+**Monitored Deployment**:
+
+- Ensured successful builds without errors.  
+- Tested the live site to confirm functionality.
+
