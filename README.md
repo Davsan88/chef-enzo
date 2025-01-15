@@ -121,7 +121,9 @@ export async function getRecipeFromMistral(ingredientsArr) {
   - Implemented a serverless backend using Netlify Functions to handle API requests securely.
   - Moved the API interaction logic from the frontend to the backend to prevent exposing the Hugging Face API key.
 
-**Backend Function (netlify/functions/hfRecipe.js):**
+#### **Steps Taken**
+**Created `netlify/functions/hfRecipe.js` with ESM Syntax**:
+
 ```javascript
 import { HfInference } from "@huggingface/inference";
 
@@ -180,6 +182,24 @@ export const handler = async (event, context) => {
   }
 };
 ```
+
+---
+
+#### **Updated `netlify.toml` Configuration**
+
+```toml
+[build]
+  functions = "netlify/functions"  # Path to functions directory
+  publish = "dist"                 # Vite's default build output directory
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+```
+
+---
+
 
 - **Purpose**:
   - Ensure sensitive information like the API key remains secure by handling API requests on the server side.
