@@ -666,3 +666,7 @@ This project is private and meant for learning purposes. Please don’t copy or 
 
 ---
 
+
+### 📫 **Get in Touch**
+
+Have questions or just want to say hi? Drop me an email at `david.sanchez.martinez@outlook.com`.
