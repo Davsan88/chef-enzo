@@ -427,3 +427,24 @@ export default IngredientList;
 **What It Does**:  
 Displays the generated recipe in a nicely formatted way using Markdown.
 
+**Code Overview**:
+
+```javascript
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
+
+const EnzoRecipe = ({ recipe }) => {
+  return (
+    <section className="suggested-recipe-container" aria-live="polite">
+      <h2>Chef Enzo's Recommendation:</h2>
+      <ReactMarkdown>{recipe}</ReactMarkdown>
+    </section>
+  );
+};
+
+export default EnzoRecipe;
+```
+
+---
+
+
