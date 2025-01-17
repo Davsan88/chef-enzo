@@ -555,4 +555,32 @@ git clone https://github.com/Davsan88/chef-enzo.git
 cd chef-enzo-recipe-app
 ```
 
+2. **Install Dependencies**:
+
+```bash
+npm install
+```
+
+3. **Set Up Environment Variables**:
+
+   - Create a `.env` file in the root of the project.
+   - Add your Hugging Face API key:
+
+```env
+HF_ACCESS_TOKEN=your_hugging_face_api_key
+```
+
+   - **Note**: Ensure `.env` is listed in `.gitignore` to keep your API key safe!
+
+4. **Run the App Locally**:
+
+```bash
+npm run dev
+```
+
+5. Open your browser and go to `http://localhost:8888` to see the app in action.
+
+---
+
+
 
