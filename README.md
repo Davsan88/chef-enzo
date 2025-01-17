@@ -616,3 +616,23 @@ git push origin main
 ---
 
 
+#### **Verify Deployment**
+
+1. **Access Your Live Site**:
+
+   - Netlify will provide a default subdomain (e.g., `chef-enzo-recipe-app.netlify.app`). You can customize this later if desired.
+
+2. **Test Functionality**:
+
+   - Add ingredients and generate recipes.
+   - Ensure the app behaves as expected without exposing the API key.
+
+3. **Check Netlify Function Logs**:
+
+   - Go to your Netlify dashboard.
+   - Navigate to **Functions** under your site.
+   - Click on your `hfRecipe` function to view logs and ensure there are no runtime errors.
+
+---
+
+
