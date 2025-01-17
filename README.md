@@ -422,3 +422,8 @@ export default IngredientList;
 ---
 
 
+### **4. `EnzoRecipe.jsx`**
+
+**What It Does**:  
+Displays the generated recipe in a nicely formatted way using Markdown.
+
