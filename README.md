@@ -583,4 +583,36 @@ npm run dev
 ---
 
 
+### 🌐 **Deployment**
+
+#### **Connect to Netlify**
+
+1. **Push Your Code to GitHub**:
+
+```bash
+git add .
+git commit -m "Initial commit"
+git push origin main
+```
+
+2. **Link GitHub to Netlify**:
+
+   - Log in to your Netlify account.
+   - Click on **Add new site** > **Import an existing project** > **GitHub**.
+   - Authorize Netlify to access your GitHub repositories.
+   - Select the `chef-enzo-recipe-app` repository.
+
+3. **Set Up Build Settings**:
+
+   - **Build Command**: `npm run build`
+   - **Publish Directory**: `dist`
+   - **Environment Variables**: Add `HF_ACCESS_TOKEN` with your Hugging Face API key in Netlify’s settings.
+
+4. **Deploy**:
+
+   - Click **Deploy site** and wait for Netlify to build and deploy your app.
+   - Once done, you'll get a live URL to share with friends and family!
+
+---
+
 
