@@ -285,3 +285,31 @@ netlify dev
 ---
 
 
+### 🧩 **Main Components**
+
+### **1. `Header.jsx`**
+
+**What It Does**:  
+Displays the app's header with the Chef Enzo logo and title.
+
+**Code Overview**:
+
+```javascript
+import React from 'react';
+import chefEnzoLogo from '../assets/chef-enzo.svg';
+
+const Header = () => {
+  return (
+    <header role="banner">
+      <img src={chefEnzoLogo} alt="Chef Enzo Logo" />
+      <h1>Chef Enzo</h1>
+    </header>
+  );
+};
+
+export default Header;
+```
+
+---
+
+
