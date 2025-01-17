@@ -397,3 +397,28 @@ export default Home;
 **What It Does**:  
 Displays the list of ingredients added by the user and provides a button to generate a recipe.
 
+**Code Overview**:
+
+```javascript
+import React from 'react';
+
+const IngredientList = ({ ingredients, fetchRecipe }) => {
+  return (
+    <div className="ingredient-list">
+      <h2>Your Ingredients:</h2>
+      <ul>
+        {ingredients.map((ingredient, index) => (
+          <li key={index}>{ingredient}</li>
+        ))}
+      </ul>
+      <button onClick={fetchRecipe}>Generate Recipe</button>
+    </div>
+  );
+};
+
+export default IngredientList;
+```
+
+---
+
+
