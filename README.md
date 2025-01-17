@@ -546,4 +546,13 @@ export const handler = async (event, context) => {
 ---
 
 
+#### **Installation**
+
+1. **Clone the Repository**:
+
+```bash
+git clone https://github.com/Davsan88/chef-enzo.git
+cd chef-enzo-recipe-app
+```
+
 
