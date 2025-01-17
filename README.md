@@ -535,6 +535,15 @@ export const handler = async (event, context) => {
 ---
 
 
+### 📦 **Getting Started**
+
+#### **Prerequisites**
+
+- **Node.js**: Ensure Node.js v22.11.0 or higher is installed.
+- **GitHub Account**: For version control and connecting to Netlify.
+- **Netlify Account**: To deploy the app and handle serverless functions.
+
+---
 
 
 
