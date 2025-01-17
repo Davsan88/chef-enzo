@@ -313,3 +313,82 @@ export default Header;
 ---
 
 
+### **2. `Home.jsx`**
+
+**What It Does**:  
+Manages the main functionality of the app, including adding ingredients and fetching recipes.
+
+**Code Overview**:
+
+```javascript
+import React, { useState } from 'react';
+import IngredientList from './IngredientList';
+import EnzoRecipe from './EnzoRecipe';
+
+const Home = () => {
+  const [ingredients, setIngredients] = useState([]);
+  const [recipe, setRecipe] = useState("");
+
+  const fetchRecipe = async () => {
+    try {
+      const response = await fetch('/api/hfRecipe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ingredients }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch the recipe');
+      }
+
+      const data = await response.json(); // { recipe: "Your recipe here" }
+      setRecipe(data.recipe);
+      console.log("Generated Recipe:", data.recipe);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const addIngredient = (formData) => {
+    const newIngredient = formData.get("ingredient");
+    setIngredients(prev => [...prev, newIngredient]);
+  };
+
+  return (
+    <main>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          addIngredient(new FormData(e.target));
+          e.target.reset();
+        }}
+        className="form"
+      >
+        <input
+          type="text"
+          placeholder="e.g. avocado"
+          aria-label="Add ingredient"
+          name="ingredient"
+          required
+        />
+        <button type="submit">Add ingredient</button>
+      </form>
+
+      {ingredients.length > 0 && (
+        <IngredientList
+          ingredients={ingredients}
+          fetchRecipe={fetchRecipe}
+        />
+      )}
+
+      {recipe && <EnzoRecipe recipe={recipe} />}
+    </main>
+  );
+};
+
+export default Home;
+```
+
+---
+
+
