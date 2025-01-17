@@ -656,3 +656,13 @@ git push origin main
 This project is private and meant for learning purposes. Please don’t copy or distribute it without permission.
 
 ---
+
+
+### 🙌 **Acknowledgments**
+
+- **Scrimba**: For the awesome tutorial that guided me through building this app.
+- **Hugging Face**: For providing powerful AI tools to make the app smarter.
+- **Netlify**: For making deployment and serverless functions a breeze.
+
+---
+
