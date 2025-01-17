@@ -448,7 +448,7 @@ export default EnzoRecipe;
 ---
 
 
-## **5. `hfRecipe.js` (Netlify Function)**
+### **5. `hfRecipe.js` (Netlify Function)**
 
 **What It Does**:  
 Handles API requests securely by interacting with the Hugging Face Inference API to generate recipes based on user ingredients.
