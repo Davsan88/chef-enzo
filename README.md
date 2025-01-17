@@ -285,7 +285,7 @@ netlify dev
 ---
 
 
-### 🧩 **Main Components**
+## 🧩 **Main Components**
 
 ### **1. `Header.jsx`**
 
@@ -519,6 +519,22 @@ export const handler = async (event, context) => {
 ```
 
 ---
+
+
+## 💡 **Skills Learned**
+
+- **React State Management**: Using `useState` to handle dynamic data like ingredients and recipes.
+- **API Integration**: Connecting to external APIs (Hugging Face) to fetch data.
+- **Serverless Functions**: Implementing Netlify Functions to handle backend operations securely.
+- **Environment Variables**: Managing sensitive information securely using `.env` files and Netlify's environment settings.
+- **Responsive Design**: Creating a user-friendly interface that works well on all devices.
+- **Version Control**: Using GitHub and GitHub Desktop for managing code changes.
+- **Continuous Deployment**: Setting up automatic deployments with Netlify connected to GitHub.
+- **Error Handling**: Managing errors gracefully both in frontend and backend to enhance user experience.
+
+---
+
+
 
 
 
