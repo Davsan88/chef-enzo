@@ -392,3 +392,8 @@ export default Home;
 ---
 
 
+### **3. `IngredientList.jsx`**
+
+**What It Does**:  
+Displays the list of ingredients added by the user and provides a button to generate a recipe.
+
