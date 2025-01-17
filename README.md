@@ -649,3 +649,10 @@ git push origin main
 - The app will fetch a recipe suggestion based on your ingredients and display it below.
 
 ---
+
+
+### 📄 **License**
+
+This project is private and meant for learning purposes. Please don’t copy or distribute it without permission.
+
+---
