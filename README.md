@@ -636,3 +636,16 @@ git push origin main
 ---
 
 
+### 🎨 **Usage**
+
+#### **Add Ingredients**:
+
+- Enter an ingredient in the input field (e.g., "tomato") and click **Add ingredient**.
+- The ingredient will appear in your list of selected ingredients.
+
+#### **Generate Recipe**:
+
+- After adding your desired ingredients, click on **Generate Recipe**.
+- The app will fetch a recipe suggestion based on your ingredients and display it below.
+
+---
