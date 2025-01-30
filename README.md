@@ -653,7 +653,7 @@ git push origin main
 
 ### 📄 **License**
 
-This project is private and meant for learning purposes. Please don’t copy or distribute it without permission.
+This project is based on the [Learn React course by Scrimba](https://scrimba.com/learn-react-c0e) and is intended for personal learning and educational purposes only. Please refer to [Scrimba](https://scrimba.com/home) for the original project and licensing information. Do not copy or distribute this project without permission.
 
 ---
 
